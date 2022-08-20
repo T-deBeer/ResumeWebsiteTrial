@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Site</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body class="main-body">
+    <nav class="w3-sidebar w3-bar-block w3-blue-grey w3-collapse" style="z-index:3;width:300px;font-weight:bold"
+        id="mySidebar">
+        <br>
+        <h3 class="w3-padding-64 w3-center"><b>Tiaan<br>De Beer</b></h3>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding w3-hide-large"
+            onclick="w3_close()">CLOSE</a>
+        <a href="#" id="about-button" class="w3-bar-item w3-button">ABOUT ME</a>
+        <a href="#projects" id="projects-button" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="#contact" id="contact-button" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">Tiaan De Beer</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-blue-gray" onclick="w3_open()">☰</a>
+    </header>
+
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+        <h4><b>About Me</b></h4>
+        <img src="../Multimedia/Images/me.jpg" alt="Me" class="my-image">
+        <div class="w3-content w3-justify" style="max-width:600px">
+            <h4>Tiaan de Beer</h4>
+            <p>
+                I am a diligent and energetic person. My ambition and curiosity coupled with my creative thinking drives
+                me to succeed in everything I do.
+            </p>
+            <p>mail: tdebeer.za@gmail.com</p>
+            <p>tel: (+27)81 565 5473</p>
+            <hr class="w3-opacity">
+            <h4 class="w3-padding-16">Technical Skills</h4>
+            <p class="w3-wide">C# - Desktop Development</p>
+            <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+            </div>
+            <p class="w3-wide">Web Programming</p>
+            <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">70%</div>
+            </div>
+            <p class="w3-wide">Microsoft Office</p>
+            <div class="w3-white">
+                <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">95%</div>
+            </div>
+            <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"
+                    onclick="window.open('../Multimedia/Files/T_de_Beer_CV.pdf')">View Resume</button></p>
+            <hr class="w3-opacity">
+
+            <h4 class="w3-padding-16" id="projects">Some Projects</h4>
+        </div>
+    </div>
+
+    <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+        <div class="w3-content" style="max-width:600px">
+            <h4 class="w3-center"><b>Contact Me</b></h4>
+            <p>Get in contact with me: </p>
+            <form>
+                <div class="w3-section">
+                    <label>Name</label>
+                    <input class="w3-input w3-border" type="text" name="Name" required>
+                </div>
+                <div class="w3-section">
+                    <label>Email</label>
+                    <input class="w3-input w3-border" type="text" name="Email" id="mailer" required>
+                </div>
+                <div class="w3-section">
+                    <label>Message</label>
+                    <input class="w3-input w3-border" type="text" name="Message" id="message" required>
+                </div>
+                <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom" id="send">Send
+                    Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="moduel" src="../Scripts/script.js"></script>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function about() {
+            document.scr
+        }
+    </script>
+</body>
+
+</html>

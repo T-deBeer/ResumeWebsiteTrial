@@ -1,0 +1,15 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.my-image {
+    margin: 1.25rem auto;
+    height: 200px;
+    width: 225px;
+
+    border-radius: 25%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
